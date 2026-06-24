@@ -1,0 +1,11 @@
+{
+  "name": "email-service",
+  "version": "1.0.0",
+  "description": "Serverless Email Service for Mini HMS",
+  "scripts": {
+    "start": "serverless offline"
+  },
+  "devDependencies": {
+    "serverless-offline": "^14.4.0"
+  }
+}

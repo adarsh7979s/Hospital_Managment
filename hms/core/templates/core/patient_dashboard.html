@@ -1,0 +1,158 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Patient Dashboard - Mini HMS{% endblock %}
+
+{% block content %}
+<div style="margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+    <div>
+        <h1 style="font-size: 2.2rem; font-weight: 700; background: linear-gradient(to right, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            Patient Dashboard
+        </h1>
+        <p style="color: var(--text-secondary);">Browse doctors, view their availability, and schedule appointments.</p>
+    </div>
+    
+    <div>
+        <div class="integration-status">
+            <span class="integration-dot {% if calendar_connected %}dot-connected{% else %}dot-disconnected{% endif %}"></span>
+            <span style="font-size: 0.9rem;">
+                Google Calendar: <strong>{% if calendar_connected %}Connected{% else %}Disconnected{% endif %}</strong>
+            </span>
+            {% if calendar_connected %}
+                <span class="btn btn-secondary" style="padding: 0.3rem 0.6rem; font-size: 0.75rem; cursor: not-allowed; opacity: 0.6;">Connected</span>
+            {% else %}
+                {% if google_configured %}
+                    <a href="{% url 'google_auth_redirect' %}" class="btn btn-primary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">Connect</a>
+                {% else %}
+                    <span class="btn btn-secondary" style="padding: 0.3rem 0.6rem; font-size: 0.75rem; cursor: help; opacity: 0.8;" title="Google Client ID & Secret not configured in .env. Calendar features will run in local logging mode.">Local Mode</span>
+                {% endif %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<div class="dashboard-grid">
+    <div>
+        <!-- View Availability & Book Section -->
+        <div class="card">
+            <h2 class="card-title">Book an Appointment</h2>
+            
+            {% if not selected_doctor %}
+                <p style="color: var(--text-secondary); padding: 1rem 0;">Please select a doctor from the list on the right to view their available slots.</p>
+            {% else %}
+                <div style="margin-bottom: 1.5rem; display: flex; justify-content: space-between; align-items: center;">
+                    <h3 style="font-size: 1.1rem; font-weight: 600;">
+                        Available slots for Dr. 
+                        <strong>
+                            {% if selected_doctor.get_full_name %}
+                                {{ selected_doctor.get_full_name }}
+                            {% else %}
+                                {{ selected_doctor.username }}
+                            {% endif %}
+                        </strong>
+                    </h3>
+                    <a href="{% url 'patient_dashboard' %}" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Clear selection</a>
+                </div>
+
+                {% if slots %}
+                    <div class="slots-grid">
+                        {% for slot in slots %}
+                            <div class="slot-card">
+                                <div>
+                                    <div class="slot-date">{{ slot.start_time|date:"D, M d, Y" }}</div>
+                                    <div class="slot-time">{{ slot.start_time|date:"H:i" }} - {{ slot.end_time|date:"H:i" }}</div>
+                                </div>
+                                <form action="{% url 'book_appointment' %}" method="POST" style="margin-top: 0.5rem; width: 100%;">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="slot_id" value="{{ slot.id }}">
+                                    <button type="submit" class="btn btn-primary" style="padding: 0.35rem; width: 100%; font-size: 0.8rem;">
+                                        Book Now
+                                    </button>
+                                </form>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <p style="color: var(--text-secondary); text-align: center; padding: 2rem 0;">This doctor has no available future slots.</p>
+                {% endif %}
+            {% endif %}
+        </div>
+
+        <!-- My Appointments Section -->
+        <div class="card">
+            <h2 class="card-title">My Scheduled Appointments</h2>
+            {% if bookings %}
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Doctor Name</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>GCal Sync</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for booking in bookings %}
+                                <tr>
+                                    <td>
+                                        <strong>
+                                            Dr. 
+                                            {% if booking.slot.doctor.get_full_name %}
+                                                {{ booking.slot.doctor.get_full_name }}
+                                            {% else %}
+                                                {{ booking.slot.doctor.username }}
+                                            {% endif %}
+                                        </strong>
+                                    </td>
+                                    <td>{{ booking.slot.start_time|date:"Y-m-d" }}</td>
+                                    <td>{{ booking.slot.start_time|date:"H:i" }} - {{ booking.slot.end_time|date:"H:i" }}</td>
+                                    <td>
+                                        {% if booking.google_event_id_patient %}
+                                            <span style="color: var(--success-color); display: flex; align-items: center; gap: 0.25rem; font-size: 0.85rem; font-weight: 600;">
+                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m22 4-10 10.01-3-3"/></svg>
+                                                Synced
+                                            </span>
+                                        {% else %}
+                                            <span style="color: var(--text-secondary); font-size: 0.85rem;" title="Not synced to Google Calendar. Ensure you have connected Google Calendar.">
+                                                Local Only
+                                            </span>
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            {% else %}
+                <p style="color: var(--text-secondary); text-align: center; padding: 2rem 0;">You have no appointments scheduled.</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <div>
+        <!-- List of Doctors Card -->
+        <div class="card">
+            <h2 class="card-title">Available Doctors</h2>
+            <div style="margin-top: 1rem; max-height: 400px; overflow-y: auto;">
+                {% if doctors %}
+                    {% for doc in doctors %}
+                        <div class="doctor-item" style="border: 1px solid {% if selected_doctor.id == doc.id %}var(--primary-color){% else %}var(--card-border){% endif %};">
+                            <div>
+                                <h4 style="font-size: 0.95rem; font-weight: 600;">
+                                    Dr. {% if doc.get_full_name %}{{ doc.get_full_name }}{% else %}{{ doc.username }}{% endif %}
+                                </h4>
+                                <span style="font-size: 0.75rem; color: var(--text-secondary);">{{ doc.email }}</span>
+                            </div>
+                            <a href="?doctor_id={{ doc.id }}" class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">
+                                View Slots
+                            </a>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <p style="color: var(--text-secondary); text-align: center; padding: 1rem 0;">No doctors registered in the system.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

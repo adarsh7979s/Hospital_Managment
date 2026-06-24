@@ -1,0 +1,225 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Mini HMS{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'core/style.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="{% url 'dashboard' %}" class="navbar-brand">
+            <!-- Medical Cross & Pulse Wave SVG Logo -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="url(#logo-grad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <defs>
+                    <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#0d9488" />
+                        <stop offset="100%" stop-color="#0284c7" />
+                    </linearGradient>
+                </defs>
+                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                <path d="M12 5v8M8 9h8" stroke="#ffffff" stroke-width="1.8" />
+            </svg>
+            <span style="font-weight: 800; letter-spacing: -0.02em;">Mini<span style="color: var(--secondary-color); font-weight: 500;">HMS</span></span>
+        </a>
+        <div class="navbar-links">
+            {% if user.is_authenticated %}
+                <span class="nav-user">
+                    Logged in as <strong>{{ user.username }}</strong> 
+                    <span class="nav-role">{{ user.profile.role }}</span>
+                </span>
+                <a href="{% url 'logout' %}" class="btn btn-secondary" style="padding: 0.45rem 0.9rem; font-size: 0.85rem;">Logout</a>
+            {% else %}
+                <a href="{% url 'login' %}" class="btn btn-secondary" style="padding: 0.45rem 0.9rem; font-size: 0.85rem;">Login</a>
+                <a href="{% url 'signup' %}" class="btn btn-primary" style="padding: 0.45rem 0.9rem; font-size: 0.85rem;">Sign Up</a>
+            {% endif %}
+        </div>
+    </nav>
+
+    <div class="container">
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                    <li class="alert alert-{% if message.tags == 'error' %}error{% elif message.tags == 'success' %}success{% else %}info{% endif %}">
+                        {% if message.tags == 'success' %}
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m22 4-10 10.01-3-3"/></svg>
+                        {% elif message.tags == 'error' %}
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
+                        {% else %}
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                        {% endif %}
+                        <span>{{ message }}</span>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <!-- AI Assistant Floating Widget -->
+    <div class="ai-widget-container">
+        <div class="ai-bubble-btn" id="aiBubble" title="Chat with AI Care Assistant">
+            <!-- Stethoscope / Chat SVG Icon -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                <path d="M8 10h8M8 14h6" stroke="rgba(255,255,255,0.8)" stroke-width="1.8"/>
+            </svg>
+        </div>
+
+        <div class="ai-chat-window" id="aiChatWindow">
+            <div class="ai-chat-header">
+                <div class="ai-header-info">
+                    <div class="ai-avatar">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4.8 16.2A12 12 0 0 1 12 14a12 12 0 0 1 7.2 2.2c.5.3.8.9.8 1.5V20H4v-2.3c0-.6.3-1.2.8-1.5z"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="ai-bot-name">Care Assistant</div>
+                        <div class="ai-bot-status">● Live Support</div>
+                    </div>
+                </div>
+                <button class="ai-close-btn" id="aiCloseBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="ai-chat-messages" id="aiChatMessages">
+                <div class="ai-message ai-message-bot">
+                    Hello! I'm your HMS Care Assistant. How can I help you today?
+                </div>
+            </div>
+
+            <div class="ai-suggestions" id="aiSuggestions">
+                <span class="ai-chip" data-query="How do I book an appointment?">How to book?</span>
+                <span class="ai-chip" data-query="How do I create availability slots?">Create slots?</span>
+                <span class="ai-chip" data-query="Can I sync my Google Calendar?">Google Sync</span>
+                <span class="ai-chip" data-query="Give me general health tips.">Health Tips</span>
+            </div>
+
+            <form class="ai-chat-input-form" id="aiChatForm">
+                <input type="text" class="ai-chat-input" id="aiChatInput" placeholder="Ask something..." autocomplete="off">
+                <button type="submit" class="ai-chat-send-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="22" y1="2" x2="11" y2="13"/>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- AI Assistant JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const aiBubble = document.getElementById('aiBubble');
+            const aiChatWindow = document.getElementById('aiChatWindow');
+            const aiCloseBtn = document.getElementById('aiCloseBtn');
+            const aiChatForm = document.getElementById('aiChatForm');
+            const aiChatInput = document.getElementById('aiChatInput');
+            const aiChatMessages = document.getElementById('aiChatMessages');
+            const aiSuggestions = document.getElementById('aiSuggestions');
+
+            // Open/Close Chat Window
+            aiBubble.addEventListener('click', () => {
+                aiChatWindow.classList.add('active');
+            });
+
+            aiCloseBtn.addEventListener('click', () => {
+                aiChatWindow.classList.remove('active');
+            });
+
+            // Handle Form Submit
+            aiChatForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const text = aiChatInput.value.trim();
+                if (!text) return;
+                
+                addUserMessage(text);
+                aiChatInput.value = '';
+                
+                simulateBotResponse(text);
+            });
+
+            // Handle Suggestion Chips
+            aiSuggestions.addEventListener('click', (e) => {
+                if (e.target.classList.contains('ai-chip')) {
+                    const query = e.target.getAttribute('data-query');
+                    addUserMessage(query);
+                    simulateBotResponse(query);
+                }
+            });
+
+            function addUserMessage(text) {
+                const msgDiv = document.createElement('div');
+                msgDiv.className = 'ai-message ai-message-user';
+                msgDiv.textContent = text;
+                aiChatMessages.appendChild(msgDiv);
+                scrollToBottom();
+            }
+
+            function addBotMessage(text) {
+                const msgDiv = document.createElement('div');
+                msgDiv.className = 'ai-message ai-message-bot';
+                msgDiv.textContent = text;
+                aiChatMessages.appendChild(msgDiv);
+                scrollToBottom();
+            }
+
+            function scrollToBottom() {
+                aiChatMessages.scrollTop = aiChatMessages.scrollHeight;
+            }
+
+            function simulateBotResponse(userQuery) {
+                // Show typing indicator
+                const typingDiv = document.createElement('div');
+                typingDiv.className = 'ai-message ai-message-bot';
+                typingDiv.id = 'aiTypingIndicator';
+                typingDiv.innerHTML = `
+                    <div class="ai-typing-indicator">
+                        <div class="ai-dot"></div>
+                        <div class="ai-dot"></div>
+                        <div class="ai-dot"></div>
+                    </div>
+                `;
+                aiChatMessages.appendChild(typingDiv);
+                scrollToBottom();
+
+                // Respond after a delay
+                setTimeout(() => {
+                    const indicator = document.getElementById('aiTypingIndicator');
+                    if (indicator) indicator.remove();
+
+                    const query = userQuery.toLowerCase();
+                    let reply = "";
+
+                    if (query.includes('book') || query.includes('appointment') || query.includes('schedule') || query.includes('patient')) {
+                        reply = "To book an appointment, log in as a Patient. On the dashboard, select a doctor under 'Available Doctors' on the right, look at their available slots, and click 'Book Now'. All bookings are serialized using database row-level locking to prevent conflicts!";
+                    } else if (query.includes('slot') || query.includes('availability') || query.includes('doctor')) {
+                        reply = "Doctors can set availability slots! Log in as a Doctor, and use the 'Add Availability' form. Select a future date and set start/end times. Overlapping or past slots are automatically blocked by the system validation.";
+                    } else if (query.includes('google') || query.includes('calendar') || query.includes('oauth') || query.includes('sync')) {
+                        reply = "Yes! You can link your Google Calendar with one click via your dashboard. Once connected, booking confirmations will automatically create synchronized calendar events for both you and your doctor/patient.";
+                    } else if (query.includes('email') || query.includes('notification') || query.includes('smtp')) {
+                        reply = "The system triggers instant emails in background threads. You get a 'SIGNUP_WELCOME' email on registration, and a 'BOOKING_CONFIRMATION' email detailing the slot time is sent to both Patient and Doctor when an appointment is booked successfully.";
+                    } else if (query.includes('fever') || query.includes('headache') || query.includes('cough') || query.includes('symptom') || query.includes('health') || query.includes('tip')) {
+                        reply = "Health Tip: For mild fever or headache, rest and stay hydrated. Avoid intense exercise and monitor your temperature. If symptoms persist or feel severe, please book an appointment with one of our doctors immediately.";
+                    } else if (query.includes('hello') || query.includes('hi') || query.includes('hey') || query.includes('assist')) {
+                        reply = "Hello! I am your HMS Care Assistant. How can I help you today? You can ask me how to book appointments, manage slots, configure Google Calendar, or trigger email notifications.";
+                    } else {
+                        reply = "I'm here to help with your Mini Hospital Management System (HMS) queries! Feel free to ask about booking appointments, doctor availability slots, Google Calendar connection, or email notifications.";
+                    }
+
+                    addBotMessage(reply);
+                }, 1000);
+            }
+        });
+    </script>
+</body>
+</html>

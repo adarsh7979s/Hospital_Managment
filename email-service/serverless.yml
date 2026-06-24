@@ -1,0 +1,18 @@
+service: email-service
+
+provider:
+  name: aws
+  runtime: python3.11
+  stage: dev
+  region: us-east-1
+
+functions:
+  send_email:
+    handler: handler.send_email
+    events:
+      - http:
+          path: email
+          method: post
+
+plugins:
+  - serverless-offline

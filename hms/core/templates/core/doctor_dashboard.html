@@ -1,0 +1,141 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Doctor Dashboard - Mini HMS{% endblock %}
+
+{% block content %}
+<div style="margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+    <div>
+        <h1 style="font-size: 2.2rem; font-weight: 700; background: linear-gradient(to right, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            Doctor Dashboard
+        </h1>
+        <p style="color: var(--text-secondary);">Manage your availability and view upcoming patient bookings.</p>
+    </div>
+    
+    <div>
+        <div class="integration-status">
+            <span class="integration-dot {% if calendar_connected %}dot-connected{% else %}dot-disconnected{% endif %}"></span>
+            <span style="font-size: 0.9rem;">
+                Google Calendar: <strong>{% if calendar_connected %}Connected{% else %}Disconnected{% endif %}</strong>
+            </span>
+            {% if calendar_connected %}
+                <span class="btn btn-secondary" style="padding: 0.3rem 0.6rem; font-size: 0.75rem; cursor: not-allowed; opacity: 0.6;">Connected</span>
+            {% else %}
+                {% if google_configured %}
+                    <a href="{% url 'google_auth_redirect' %}" class="btn btn-primary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">Connect</a>
+                {% else %}
+                    <span class="btn btn-secondary" style="padding: 0.3rem 0.6rem; font-size: 0.75rem; cursor: help; opacity: 0.8;" title="Google Client ID & Secret not configured in .env. Calendar features will run in local logging mode.">Local Mode</span>
+                {% endif %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<div class="dashboard-grid">
+    <div>
+        <!-- Bookings Section -->
+        <div class="card">
+            <h2 class="card-title">Patient Appointments</h2>
+            {% if bookings %}
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Patient Name</th>
+                                <th>Email</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>GCal Sync</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for booking in bookings %}
+                                <tr>
+                                    <td>
+                                        <strong>
+                                            {% if booking.patient.get_full_name %}
+                                                {{ booking.patient.get_full_name }}
+                                            {% else %}
+                                                {{ booking.patient.username }}
+                                            {% endif %}
+                                        </strong>
+                                    </td>
+                                    <td>{{ booking.patient.email }}</td>
+                                    <td>{{ booking.slot.start_time|date:"Y-m-d" }}</td>
+                                    <td>{{ booking.slot.start_time|date:"H:i" }} - {{ booking.slot.end_time|date:"H:i" }}</td>
+                                    <td>
+                                        {% if booking.google_event_id_doctor %}
+                                            <span style="color: var(--success-color); display: flex; align-items: center; gap: 0.25rem; font-size: 0.85rem; font-weight: 600;">
+                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m22 4-10 10.01-3-3"/></svg>
+                                                Synced
+                                            </span>
+                                        {% else %}
+                                            <span style="color: var(--text-secondary); font-size: 0.85rem;" title="Not synced to Google Calendar. Ensure you have connected Google Calendar.">
+                                                Local Only
+                                            </span>
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            {% else %}
+                <p style="color: var(--text-secondary); text-align: center; padding: 2rem 0;">No appointments booked yet.</p>
+            {% endif %}
+        </div>
+
+        <!-- Availability Section -->
+        <div class="card">
+            <h2 class="card-title">My Availability Slots</h2>
+            {% if slots %}
+                <div class="slots-grid">
+                    {% for slot in slots %}
+                        <div class="slot-card" style="cursor: default;">
+                            <div>
+                                <div class="slot-date">{{ slot.start_time|date:"D, M d, Y" }}</div>
+                                <div class="slot-time">{{ slot.start_time|date:"H:i" }} - {{ slot.end_time|date:"H:i" }}</div>
+                            </div>
+                            <span class="slot-status {% if slot.is_booked %}status-booked{% else %}status-available{% endif %}">
+                                {% if slot.is_booked %}Booked{% else %}Available{% endif %}
+                            </span>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <p style="color: var(--text-secondary); text-align: center; padding: 2rem 0;">You have not created any availability slots.</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <div>
+        <!-- Create Availability Card -->
+        <div class="card">
+            <h2 class="card-title">Add Availability</h2>
+            <form action="{% url 'add_availability' %}" method="POST" style="margin-top: 1rem;">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" name="date" id="date" class="form-control" required min="{{ today|date:'Y-m-d' }}">
+                </div>
+                
+                <div class="form-group">
+                    <label for="start_time">Start Time</label>
+                    <input type="time" name="start_time" id="start_time" class="form-control" required>
+                </div>
+                
+                <div class="form-group" style="margin-bottom: 1.5rem;">
+                    <label for="end_time">End Time</label>
+                    <input type="time" name="end_time" id="end_time" class="form-control" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.75rem;">Create Slot</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Set minimum date to today
+    document.getElementById('date').min = new Date().toISOString().split('T')[0];
+</script>
+{% endblock %}
