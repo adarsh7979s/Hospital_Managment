@@ -5,7 +5,7 @@
 {% block content %}
 <div style="margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
     <div>
-        <h1 style="font-size: 2.2rem; font-weight: 700; background: linear-gradient(to right, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+        <h1 style="font-size: 2.2rem; font-weight: 700; background: linear-gradient(to right, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
             Patient Dashboard
         </h1>
         <p style="color: var(--text-secondary);">Browse doctors, view their availability, and schedule appointments.</p>
@@ -136,7 +136,7 @@
             <div style="margin-top: 1rem; max-height: 400px; overflow-y: auto;">
                 {% if doctors %}
                     {% for doc in doctors %}
-                        <div class="doctor-item" style="border: 1px solid {% if selected_doctor.id == doc.id %}var(--primary-color){% else %}var(--card-border){% endif %};">
+                        <div class="doctor-item {% if selected_doctor.id == doc.id %}active-doctor{% endif %}">
                             <div>
                                 <h4 style="font-size: 0.95rem; font-weight: 600;">
                                     Dr. {% if doc.get_full_name %}{{ doc.get_full_name }}{% else %}{{ doc.username }}{% endif %}

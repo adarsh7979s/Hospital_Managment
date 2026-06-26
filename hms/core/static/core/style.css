@@ -63,6 +63,7 @@ body {
     text-decoration: none;
     background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     display: flex;
     align-items: center;
@@ -369,6 +370,12 @@ tr:hover td {
     align-items: center;
     transition: all 0.2s ease;
     box-shadow: var(--shadow-sm);
+}
+
+.doctor-item.active-doctor {
+    border-color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: var(--shadow-md);
 }
 
 .doctor-item:hover {
