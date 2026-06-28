@@ -1,0 +1,2529 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "handler.py",
+      "file_type": "code",
+      "source_file": "email-service/handler.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "email_service_handler",
+      "community": 11,
+      "norm_label": "handler.py"
+    },
+    {
+      "label": "send_email()",
+      "file_type": "code",
+      "source_file": "email-service/handler.py",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "email_service_handler_send_email",
+      "community": 11,
+      "norm_label": "send_email()"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "email-service/package.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "email_service_package",
+      "community": 4,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "email-service/package.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "email_service_package_name",
+      "community": 4,
+      "norm_label": "name"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "email-service/package.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "email_service_package_version",
+      "community": 4,
+      "norm_label": "version"
+    },
+    {
+      "label": "description",
+      "file_type": "code",
+      "source_file": "email-service/package.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "email_service_package_description",
+      "community": 4,
+      "norm_label": "description"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "email-service/package.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "email_service_package_scripts",
+      "community": 4,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "start",
+      "file_type": "code",
+      "source_file": "email-service/package.json",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "email_service_package_scripts_start",
+      "community": 4,
+      "norm_label": "start"
+    },
+    {
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "email-service/package.json",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "email_service_package_devdependencies",
+      "community": 4,
+      "norm_label": "devdependencies"
+    },
+    {
+      "label": "serverless-offline",
+      "file_type": "code",
+      "source_file": "email-service/package.json",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "email_service_package_devdependencies_serverless_offline",
+      "community": 4,
+      "norm_label": "serverless-offline"
+    },
+    {
+      "label": "server.py",
+      "file_type": "code",
+      "source_file": "email-service/server.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "email_service_server",
+      "community": 6,
+      "norm_label": "server.py"
+    },
+    {
+      "label": "EmailHandler",
+      "file_type": "code",
+      "source_file": "email-service/server.py",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "email_service_server_emailhandler",
+      "community": 6,
+      "norm_label": "emailhandler"
+    },
+    {
+      "label": "BaseHTTPRequestHandler",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "basehttprequesthandler",
+      "community": 6,
+      "norm_label": "basehttprequesthandler"
+    },
+    {
+      "label": ".do_POST()",
+      "file_type": "code",
+      "source_file": "email-service/server.py",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "email_service_server_emailhandler_do_post",
+      "community": 6,
+      "norm_label": ".do_post()"
+    },
+    {
+      "label": ".log_message()",
+      "file_type": "code",
+      "source_file": "email-service/server.py",
+      "source_location": "L112",
+      "_origin": "ast",
+      "id": "email_service_server_emailhandler_log_message",
+      "community": 6,
+      "norm_label": ".log_message()"
+    },
+    {
+      "label": "run()",
+      "file_type": "code",
+      "source_file": "email-service/server.py",
+      "source_location": "L116",
+      "_origin": "ast",
+      "id": "email_service_server_run",
+      "community": 6,
+      "norm_label": "run()"
+    },
+    {
+      "label": "Standalone Email Service for Mini HMS. Replaces the Serverless offline endpoint",
+      "file_type": "rationale",
+      "source_file": "email-service/server.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "email_service_server_rationale_1",
+      "community": 6,
+      "norm_label": "standalone email service for mini hms. replaces the serverless offline endpoint"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "hms/core/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "core_init",
+      "community": 19,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "admin.py",
+      "file_type": "code",
+      "source_file": "hms/core/admin.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "core_admin",
+      "community": 0,
+      "norm_label": "admin.py"
+    },
+    {
+      "label": "UserProfileAdmin",
+      "file_type": "code",
+      "source_file": "hms/core/admin.py",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "core_admin_userprofileadmin",
+      "community": 0,
+      "norm_label": "userprofileadmin"
+    },
+    {
+      "label": "AvailabilitySlotAdmin",
+      "file_type": "code",
+      "source_file": "hms/core/admin.py",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "core_admin_availabilityslotadmin",
+      "community": 0,
+      "norm_label": "availabilityslotadmin"
+    },
+    {
+      "label": "BookingAdmin",
+      "file_type": "code",
+      "source_file": "hms/core/admin.py",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "core_admin_bookingadmin",
+      "community": 0,
+      "norm_label": "bookingadmin"
+    },
+    {
+      "label": "GoogleCredentialsAdmin",
+      "file_type": "code",
+      "source_file": "hms/core/admin.py",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "core_admin_googlecredentialsadmin",
+      "community": 0,
+      "norm_label": "googlecredentialsadmin"
+    },
+    {
+      "label": "apps.py",
+      "file_type": "code",
+      "source_file": "hms/core/apps.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "core_apps",
+      "community": 8,
+      "norm_label": "apps.py"
+    },
+    {
+      "label": "CoreConfig",
+      "file_type": "code",
+      "source_file": "hms/core/apps.py",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "core_apps_coreconfig",
+      "community": 8,
+      "norm_label": "coreconfig"
+    },
+    {
+      "label": "AppConfig",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "appconfig",
+      "community": 8,
+      "norm_label": "appconfig"
+    },
+    {
+      "label": "0001_initial.py",
+      "file_type": "code",
+      "source_file": "hms/core/migrations/0001_initial.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "migrations_0001_initial",
+      "community": 16,
+      "norm_label": "0001_initial.py"
+    },
+    {
+      "label": "Migration",
+      "file_type": "code",
+      "source_file": "hms/core/migrations/0001_initial.py",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "migrations_0001_initial_migration",
+      "community": 16,
+      "norm_label": "migration"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "hms/core/migrations/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "migrations_init",
+      "community": 22,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "models.py",
+      "file_type": "code",
+      "source_file": "hms/core/models.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "core_models",
+      "community": 0,
+      "norm_label": "models.py"
+    },
+    {
+      "label": "UserProfile",
+      "file_type": "code",
+      "source_file": "hms/core/models.py",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "core_models_userprofile",
+      "community": 0,
+      "norm_label": "userprofile"
+    },
+    {
+      "label": ".__str__()",
+      "file_type": "code",
+      "source_file": "hms/core/models.py",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "core_models_userprofile_str",
+      "community": 0,
+      "norm_label": ".__str__()"
+    },
+    {
+      "label": "GoogleCredentials",
+      "file_type": "code",
+      "source_file": "hms/core/models.py",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "core_models_googlecredentials",
+      "community": 0,
+      "norm_label": "googlecredentials"
+    },
+    {
+      "label": ".to_oauth_credentials()",
+      "file_type": "code",
+      "source_file": "hms/core/models.py",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "core_models_googlecredentials_to_oauth_credentials",
+      "community": 0,
+      "norm_label": ".to_oauth_credentials()"
+    },
+    {
+      "label": ".update_from_oauth_credentials()",
+      "file_type": "code",
+      "source_file": "hms/core/models.py",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "core_models_googlecredentials_update_from_oauth_credentials",
+      "community": 0,
+      "norm_label": ".update_from_oauth_credentials()"
+    },
+    {
+      "label": ".__str__()",
+      "file_type": "code",
+      "source_file": "hms/core/models.py",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "core_models_googlecredentials_str",
+      "community": 0,
+      "norm_label": ".__str__()"
+    },
+    {
+      "label": "AvailabilitySlot",
+      "file_type": "code",
+      "source_file": "hms/core/models.py",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "core_models_availabilityslot",
+      "community": 0,
+      "norm_label": "availabilityslot"
+    },
+    {
+      "label": "Meta",
+      "file_type": "code",
+      "source_file": "hms/core/models.py",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "core_models_meta",
+      "community": 0,
+      "norm_label": "meta"
+    },
+    {
+      "label": ".__str__()",
+      "file_type": "code",
+      "source_file": "hms/core/models.py",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "core_models_availabilityslot_str",
+      "community": 0,
+      "norm_label": ".__str__()"
+    },
+    {
+      "label": "Booking",
+      "file_type": "code",
+      "source_file": "hms/core/models.py",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "core_models_booking",
+      "community": 0,
+      "norm_label": "booking"
+    },
+    {
+      "label": ".__str__()",
+      "file_type": "code",
+      "source_file": "hms/core/models.py",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "core_models_booking_str",
+      "community": 0,
+      "norm_label": ".__str__()"
+    },
+    {
+      "label": "Converts database values into a Google Credentials object.",
+      "file_type": "rationale",
+      "source_file": "hms/core/models.py",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "core_models_rationale_27",
+      "community": 0,
+      "norm_label": "converts database values into a google credentials object."
+    },
+    {
+      "label": "Updates database record from a Google Credentials object.",
+      "file_type": "rationale",
+      "source_file": "hms/core/models.py",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "core_models_rationale_42",
+      "community": 0,
+      "norm_label": "updates database record from a google credentials object."
+    },
+    {
+      "label": "tests.py",
+      "file_type": "code",
+      "source_file": "hms/core/tests.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "core_tests",
+      "community": 0,
+      "norm_label": "tests.py"
+    },
+    {
+      "label": "BookingRaceConditionTest",
+      "file_type": "code",
+      "source_file": "hms/core/tests.py",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "core_tests_bookingraceconditiontest",
+      "community": 0,
+      "norm_label": "bookingraceconditiontest"
+    },
+    {
+      "label": "TransactionTestCase",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "transactiontestcase",
+      "community": 0,
+      "norm_label": "transactiontestcase"
+    },
+    {
+      "label": ".setUp()",
+      "file_type": "code",
+      "source_file": "hms/core/tests.py",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "core_tests_bookingraceconditiontest_setup",
+      "community": 0,
+      "norm_label": ".setup()"
+    },
+    {
+      "label": ".test_simultaneous_booking_race_condition()",
+      "file_type": "code",
+      "source_file": "hms/core/tests.py",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "core_tests_bookingraceconditiontest_test_simultaneous_booking_race_condition",
+      "community": 0,
+      "norm_label": ".test_simultaneous_booking_race_condition()"
+    },
+    {
+      "label": "urls.py",
+      "file_type": "code",
+      "source_file": "hms/core/urls.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "core_urls",
+      "community": 20,
+      "norm_label": "urls.py"
+    },
+    {
+      "label": "views.py",
+      "file_type": "code",
+      "source_file": "hms/core/views.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "core_views",
+      "community": 1,
+      "norm_label": "views.py"
+    },
+    {
+      "label": "send_email_api_call()",
+      "file_type": "code",
+      "source_file": "hms/core/views.py",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "core_views_send_email_api_call",
+      "community": 1,
+      "norm_label": "send_email_api_call()"
+    },
+    {
+      "label": "trigger_email_notification()",
+      "file_type": "code",
+      "source_file": "hms/core/views.py",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "core_views_trigger_email_notification",
+      "community": 1,
+      "norm_label": "trigger_email_notification()"
+    },
+    {
+      "label": "create_google_calendar_event()",
+      "file_type": "code",
+      "source_file": "hms/core/views.py",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "core_views_create_google_calendar_event",
+      "community": 1,
+      "norm_label": "create_google_calendar_event()"
+    },
+    {
+      "label": "process_booking_background()",
+      "file_type": "code",
+      "source_file": "hms/core/views.py",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "core_views_process_booking_background",
+      "community": 1,
+      "norm_label": "process_booking_background()"
+    },
+    {
+      "label": "signup_view()",
+      "file_type": "code",
+      "source_file": "hms/core/views.py",
+      "source_location": "L118",
+      "_origin": "ast",
+      "id": "core_views_signup_view",
+      "community": 1,
+      "norm_label": "signup_view()"
+    },
+    {
+      "label": "login_view()",
+      "file_type": "code",
+      "source_file": "hms/core/views.py",
+      "source_location": "L171",
+      "_origin": "ast",
+      "id": "core_views_login_view",
+      "community": 1,
+      "norm_label": "login_view()"
+    },
+    {
+      "label": "logout_view()",
+      "file_type": "code",
+      "source_file": "hms/core/views.py",
+      "source_location": "L190",
+      "_origin": "ast",
+      "id": "core_views_logout_view",
+      "community": 1,
+      "norm_label": "logout_view()"
+    },
+    {
+      "label": "dashboard_redirect_view()",
+      "file_type": "code",
+      "source_file": "hms/core/views.py",
+      "source_location": "L201",
+      "_origin": "ast",
+      "id": "core_views_dashboard_redirect_view",
+      "community": 1,
+      "norm_label": "dashboard_redirect_view()"
+    },
+    {
+      "label": "doctor_dashboard()",
+      "file_type": "code",
+      "source_file": "hms/core/views.py",
+      "source_location": "L221",
+      "_origin": "ast",
+      "id": "core_views_doctor_dashboard",
+      "community": 1,
+      "norm_label": "doctor_dashboard()"
+    },
+    {
+      "label": "add_availability()",
+      "file_type": "code",
+      "source_file": "hms/core/views.py",
+      "source_location": "L243",
+      "_origin": "ast",
+      "id": "core_views_add_availability",
+      "community": 1,
+      "norm_label": "add_availability()"
+    },
+    {
+      "label": "patient_dashboard()",
+      "file_type": "code",
+      "source_file": "hms/core/views.py",
+      "source_location": "L297",
+      "_origin": "ast",
+      "id": "core_views_patient_dashboard",
+      "community": 1,
+      "norm_label": "patient_dashboard()"
+    },
+    {
+      "label": "book_appointment()",
+      "file_type": "code",
+      "source_file": "hms/core/views.py",
+      "source_location": "L339",
+      "_origin": "ast",
+      "id": "core_views_book_appointment",
+      "community": 1,
+      "norm_label": "book_appointment()"
+    },
+    {
+      "label": "get_google_oauth_flow()",
+      "file_type": "code",
+      "source_file": "hms/core/views.py",
+      "source_location": "L396",
+      "_origin": "ast",
+      "id": "core_views_get_google_oauth_flow",
+      "community": 1,
+      "norm_label": "get_google_oauth_flow()"
+    },
+    {
+      "label": "google_auth_redirect()",
+      "file_type": "code",
+      "source_file": "hms/core/views.py",
+      "source_location": "L415",
+      "_origin": "ast",
+      "id": "core_views_google_auth_redirect",
+      "community": 1,
+      "norm_label": "google_auth_redirect()"
+    },
+    {
+      "label": "google_auth_callback()",
+      "file_type": "code",
+      "source_file": "hms/core/views.py",
+      "source_location": "L431",
+      "_origin": "ast",
+      "id": "core_views_google_auth_callback",
+      "community": 1,
+      "norm_label": "google_auth_callback()"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "hms/hms/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "hms_init",
+      "community": 21,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "asgi.py",
+      "file_type": "code",
+      "source_file": "hms/hms/asgi.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "hms_asgi",
+      "community": 12,
+      "norm_label": "asgi.py"
+    },
+    {
+      "label": "ASGI config for hms project.  It exposes the ASGI callable as a module-level v",
+      "file_type": "rationale",
+      "source_file": "hms/hms/asgi.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "hms_asgi_rationale_1",
+      "community": 12,
+      "norm_label": "asgi config for hms project.  it exposes the asgi callable as a module-level v"
+    },
+    {
+      "label": "settings.py",
+      "file_type": "code",
+      "source_file": "hms/hms/settings.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "hms_settings",
+      "community": 13,
+      "norm_label": "settings.py"
+    },
+    {
+      "label": "Django settings for hms project.  Generated by 'django-admin startproject' usi",
+      "file_type": "rationale",
+      "source_file": "hms/hms/settings.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "hms_settings_rationale_1",
+      "community": 13,
+      "norm_label": "django settings for hms project.  generated by 'django-admin startproject' usi"
+    },
+    {
+      "label": "urls.py",
+      "file_type": "code",
+      "source_file": "hms/hms/urls.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "hms_urls",
+      "community": 14,
+      "norm_label": "urls.py"
+    },
+    {
+      "label": "URL configuration for hms project.  The `urlpatterns` list routes URLs to view",
+      "file_type": "rationale",
+      "source_file": "hms/hms/urls.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "hms_urls_rationale_1",
+      "community": 14,
+      "norm_label": "url configuration for hms project.  the `urlpatterns` list routes urls to view"
+    },
+    {
+      "label": "wsgi.py",
+      "file_type": "code",
+      "source_file": "hms/hms/wsgi.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "hms_wsgi",
+      "community": 15,
+      "norm_label": "wsgi.py"
+    },
+    {
+      "label": "WSGI config for hms project.  It exposes the WSGI callable as a module-level v",
+      "file_type": "rationale",
+      "source_file": "hms/hms/wsgi.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "hms_wsgi_rationale_1",
+      "community": 15,
+      "norm_label": "wsgi config for hms project.  it exposes the wsgi callable as a module-level v"
+    },
+    {
+      "label": "manage.py",
+      "file_type": "code",
+      "source_file": "hms/manage.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "hms_manage",
+      "community": 9,
+      "norm_label": "manage.py"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "hms/manage.py",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "hms_manage_main",
+      "community": 9,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Run administrative tasks.",
+      "file_type": "rationale",
+      "source_file": "hms/manage.py",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "hms_manage_rationale_8",
+      "community": 9,
+      "norm_label": "run administrative tasks."
+    },
+    {
+      "label": "smtp_server.py",
+      "file_type": "code",
+      "source_file": "scratch/smtp_server.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_smtp_server",
+      "community": 10,
+      "norm_label": "smtp_server.py"
+    },
+    {
+      "label": "handle_client()",
+      "file_type": "code",
+      "source_file": "scratch/smtp_server.py",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "scratch_smtp_server_handle_client",
+      "community": 10,
+      "norm_label": "handle_client()"
+    },
+    {
+      "label": "run_smtp_server()",
+      "file_type": "code",
+      "source_file": "scratch/smtp_server.py",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "scratch_smtp_server_run_smtp_server",
+      "community": 10,
+      "norm_label": "run_smtp_server()"
+    },
+    {
+      "label": "graphify.md",
+      "file_type": "document",
+      "source_file": ".agents/rules/graphify.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "rules_graphify",
+      "community": 17,
+      "norm_label": "graphify.md"
+    },
+    {
+      "label": "graphify",
+      "file_type": "document",
+      "source_file": ".agents/rules/graphify.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "rules_graphify_graphify",
+      "community": 17,
+      "norm_label": "graphify"
+    },
+    {
+      "label": "graphify.md",
+      "file_type": "document",
+      "source_file": ".agents/workflows/graphify.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "workflows_graphify",
+      "community": 18,
+      "norm_label": "graphify.md"
+    },
+    {
+      "label": "Workflow: graphify",
+      "file_type": "document",
+      "source_file": ".agents/workflows/graphify.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "workflows_graphify_workflow_graphify",
+      "community": 18,
+      "norm_label": "workflow: graphify"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme",
+      "community": 2,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Mini Hospital Management System (HMS)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme_mini_hospital_management_system_hms",
+      "community": 2,
+      "norm_label": "mini hospital management system (hms)"
+    },
+    {
+      "label": "Setup and Run",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "readme_setup_and_run",
+      "community": 2,
+      "norm_label": "setup and run"
+    },
+    {
+      "label": "Prerequisites",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "readme_prerequisites",
+      "community": 2,
+      "norm_label": "prerequisites"
+    },
+    {
+      "label": "1. Workspace Configuration",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "readme_1_workspace_configuration",
+      "community": 2,
+      "norm_label": "1. workspace configuration"
+    },
+    {
+      "label": "2. Initialize Database",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "readme_2_initialize_database",
+      "community": 2,
+      "norm_label": "2. initialize database"
+    },
+    {
+      "label": "3. Start Local Mock SMTP Server (Terminal 1)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "readme_3_start_local_mock_smtp_server_terminal_1",
+      "community": 2,
+      "norm_label": "3. start local mock smtp server (terminal 1)"
+    },
+    {
+      "label": "4. Start Serverless Email Service (Terminal 2)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "readme_4_start_serverless_email_service_terminal_2",
+      "community": 2,
+      "norm_label": "4. start serverless email service (terminal 2)"
+    },
+    {
+      "label": "5. Run Django Application (Terminal 3)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L74",
+      "_origin": "ast",
+      "id": "readme_5_run_django_application_terminal_3",
+      "community": 2,
+      "norm_label": "5. run django application (terminal 3)"
+    },
+    {
+      "label": "System Architecture",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L84",
+      "_origin": "ast",
+      "id": "readme_system_architecture",
+      "community": 2,
+      "norm_label": "system architecture"
+    },
+    {
+      "label": "Django App & Serverless Connection",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L97",
+      "_origin": "ast",
+      "id": "readme_django_app_serverless_connection",
+      "community": 2,
+      "norm_label": "django app & serverless connection"
+    },
+    {
+      "label": "Data Model Decisions",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L101",
+      "_origin": "ast",
+      "id": "readme_data_model_decisions",
+      "community": 2,
+      "norm_label": "data model decisions"
+    },
+    {
+      "label": "Role-Based Access Enforcement",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L107",
+      "_origin": "ast",
+      "id": "readme_role_based_access_enforcement",
+      "community": 2,
+      "norm_label": "role-based access enforcement"
+    },
+    {
+      "label": "Google Calendar Integration",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L112",
+      "_origin": "ast",
+      "id": "readme_google_calendar_integration",
+      "community": 2,
+      "norm_label": "google calendar integration"
+    },
+    {
+      "label": "The Design Decision",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L119",
+      "_origin": "ast",
+      "id": "readme_the_design_decision",
+      "community": 7,
+      "norm_label": "the design decision"
+    },
+    {
+      "label": "Named Problem: Handling Concurrent Slot Booking Race Conditions",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L121",
+      "_origin": "ast",
+      "id": "readme_named_problem_handling_concurrent_slot_booking_race_conditions",
+      "community": 7,
+      "norm_label": "named problem: handling concurrent slot booking race conditions"
+    },
+    {
+      "label": "Options Considered",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L124",
+      "_origin": "ast",
+      "id": "readme_options_considered",
+      "community": 7,
+      "norm_label": "options considered"
+    },
+    {
+      "label": "Option A: Application-Level Verification",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L126",
+      "_origin": "ast",
+      "id": "readme_option_a_application_level_verification",
+      "community": 7,
+      "norm_label": "option a: application-level verification"
+    },
+    {
+      "label": "Option B: Database-Level Row Locking via Transactions (`select_for_update`)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L131",
+      "_origin": "ast",
+      "id": "readme_option_b_database_level_row_locking_via_transactions_select_for_update",
+      "community": 7,
+      "norm_label": "option b: database-level row locking via transactions (`select_for_update`)"
+    },
+    {
+      "label": "Selected Choice and Defense: Option B",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L136",
+      "_origin": "ast",
+      "id": "readme_selected_choice_and_defense_option_b",
+      "community": 7,
+      "norm_label": "selected choice and defense: option b"
+    },
+    {
+      "label": "Limitations",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L143",
+      "_origin": "ast",
+      "id": "readme_limitations",
+      "community": 2,
+      "norm_label": "limitations"
+    },
+    {
+      "label": "antigravity-session.md",
+      "file_type": "document",
+      "source_file": "ai-tool-usage-log/antigravity-session.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "ai_tool_usage_log_antigravity_session",
+      "community": 5,
+      "norm_label": "antigravity-session.md"
+    },
+    {
+      "label": "AI Tool Usage Log",
+      "file_type": "document",
+      "source_file": "ai-tool-usage-log/antigravity-session.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "ai_tool_usage_log_antigravity_session_ai_tool_usage_log",
+      "community": 5,
+      "norm_label": "ai tool usage log"
+    },
+    {
+      "label": "Session Information",
+      "file_type": "document",
+      "source_file": "ai-tool-usage-log/antigravity-session.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "ai_tool_usage_log_antigravity_session_session_information",
+      "community": 5,
+      "norm_label": "session information"
+    },
+    {
+      "label": "Thread Summary",
+      "file_type": "document",
+      "source_file": "ai-tool-usage-log/antigravity-session.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "ai_tool_usage_log_antigravity_session_thread_summary",
+      "community": 5,
+      "norm_label": "thread summary"
+    },
+    {
+      "label": "Prompt 1: Initial Requirement Analysis",
+      "file_type": "document",
+      "source_file": "ai-tool-usage-log/antigravity-session.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "ai_tool_usage_log_antigravity_session_prompt_1_initial_requirement_analysis",
+      "community": 5,
+      "norm_label": "prompt 1: initial requirement analysis"
+    },
+    {
+      "label": "Prompt 2: Execution Start",
+      "file_type": "document",
+      "source_file": "ai-tool-usage-log/antigravity-session.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "ai_tool_usage_log_antigravity_session_prompt_2_execution_start",
+      "community": 5,
+      "norm_label": "prompt 2: execution start"
+    },
+    {
+      "label": "Prompt 3: Healthcare Redesign & AI Assistant Makeover",
+      "file_type": "document",
+      "source_file": "ai-tool-usage-log/antigravity-session.md",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "ai_tool_usage_log_antigravity_session_prompt_3_healthcare_redesign_ai_assistant_makeover",
+      "community": 5,
+      "norm_label": "prompt 3: healthcare redesign & ai assistant makeover"
+    },
+    {
+      "label": "video_script.md",
+      "file_type": "document",
+      "source_file": "ai-tool-usage-log/video_script.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "ai_tool_usage_log_video_script",
+      "community": 3,
+      "norm_label": "video_script.md"
+    },
+    {
+      "label": "Video Demo Script - Mini Hospital Management System (HMS)",
+      "file_type": "document",
+      "source_file": "ai-tool-usage-log/video_script.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "ai_tool_usage_log_video_script_video_demo_script_mini_hospital_management_system_hms",
+      "community": 3,
+      "norm_label": "video demo script - mini hospital management system (hms)"
+    },
+    {
+      "label": "\u23f1\ufe0f Video Timeline Overview",
+      "file_type": "document",
+      "source_file": "ai-tool-usage-log/video_script.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "ai_tool_usage_log_video_script_video_timeline_overview",
+      "community": 3,
+      "norm_label": "\u23f1\ufe0f video timeline overview"
+    },
+    {
+      "label": "\ud83c\udf99\ufe0f Script & Action Guide",
+      "file_type": "document",
+      "source_file": "ai-tool-usage-log/video_script.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "ai_tool_usage_log_video_script_script_action_guide",
+      "community": 3,
+      "norm_label": "\ud83c\udf99\ufe0f script & action guide"
+    },
+    {
+      "label": "Section 1: Project Overview & Tech Stack (0:00 - 1:00)",
+      "file_type": "document",
+      "source_file": "ai-tool-usage-log/video_script.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "ai_tool_usage_log_video_script_section_1_project_overview_tech_stack_0_00_1_00",
+      "community": 3,
+      "norm_label": "section 1: project overview & tech stack (0:00 - 1:00)"
+    },
+    {
+      "label": "Section 2: Doctor Flow (1:00 - 2:30)",
+      "file_type": "document",
+      "source_file": "ai-tool-usage-log/video_script.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "ai_tool_usage_log_video_script_section_2_doctor_flow_1_00_2_30",
+      "community": 3,
+      "norm_label": "section 2: doctor flow (1:00 - 2:30)"
+    },
+    {
+      "label": "Section 3: Patient Flow (2:30 - 4:30)",
+      "file_type": "document",
+      "source_file": "ai-tool-usage-log/video_script.md",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "ai_tool_usage_log_video_script_section_3_patient_flow_2_30_4_30",
+      "community": 3,
+      "norm_label": "section 3: patient flow (2:30 - 4:30)"
+    },
+    {
+      "label": "Section 4: Slot Blocking & Race Condition Verification (4:30 - 5:30)",
+      "file_type": "document",
+      "source_file": "ai-tool-usage-log/video_script.md",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "ai_tool_usage_log_video_script_section_4_slot_blocking_race_condition_verification_4_30_5_30",
+      "community": 3,
+      "norm_label": "section 4: slot blocking & race condition verification (4:30 - 5:30)"
+    },
+    {
+      "label": "Section 5: Email Notifications (5:30 - 7:00)",
+      "file_type": "document",
+      "source_file": "ai-tool-usage-log/video_script.md",
+      "source_location": "L76",
+      "_origin": "ast",
+      "id": "ai_tool_usage_log_video_script_section_5_email_notifications_5_30_7_00",
+      "community": 3,
+      "norm_label": "section 5: email notifications (5:30 - 7:00)"
+    },
+    {
+      "label": "Section 6: Google Calendar OAuth Integration (7:00 - 8:30)",
+      "file_type": "document",
+      "source_file": "ai-tool-usage-log/video_script.md",
+      "source_location": "L90",
+      "_origin": "ast",
+      "id": "ai_tool_usage_log_video_script_section_6_google_calendar_oauth_integration_7_00_8_30",
+      "community": 3,
+      "norm_label": "section 6: google calendar oauth integration (7:00 - 8:30)"
+    },
+    {
+      "label": "Section 7: Code Walkthrough & Design Decision Defense (8:30 - 10:00)",
+      "file_type": "document",
+      "source_file": "ai-tool-usage-log/video_script.md",
+      "source_location": "L101",
+      "_origin": "ast",
+      "id": "ai_tool_usage_log_video_script_section_7_code_walkthrough_design_decision_defense_8_30_10_00",
+      "community": 3,
+      "norm_label": "section 7: code walkthrough & design decision defense (8:30 - 10:00)"
+    },
+    {
+      "label": "\ud83d\udca1 Quick Tips for Recording",
+      "file_type": "document",
+      "source_file": "ai-tool-usage-log/video_script.md",
+      "source_location": "L114",
+      "_origin": "ast",
+      "id": "ai_tool_usage_log_video_script_quick_tips_for_recording",
+      "community": 3,
+      "norm_label": "\ud83d\udca1 quick tips for recording"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "email-service/handler.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "email_service_handler",
+      "target": "email_service_handler_send_email"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "email-service/package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "email_service_package",
+      "target": "email_service_package_description"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "email-service/package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "email_service_package",
+      "target": "email_service_package_devdependencies"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "email-service/package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "email_service_package",
+      "target": "email_service_package_name"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "email-service/package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "email_service_package",
+      "target": "email_service_package_scripts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "email-service/package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "email_service_package",
+      "target": "email_service_package_version"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "email-service/package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "email_service_package_scripts",
+      "target": "email_service_package_scripts_start"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "email-service/package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "email_service_package_devdependencies",
+      "target": "email_service_package_devdependencies_serverless_offline"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "email-service/server.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "email_service_server",
+      "target": "email_service_server_emailhandler"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "email-service/server.py",
+      "source_location": "L116",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "email_service_server",
+      "target": "email_service_server_run"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "email-service/server.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "email_service_server_rationale_1",
+      "target": "email_service_server"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "email-service/server.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "email_service_server_emailhandler",
+      "target": "basehttprequesthandler"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "email-service/server.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "email_service_server_emailhandler",
+      "target": "email_service_server_emailhandler_do_post"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "email-service/server.py",
+      "source_location": "L112",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "email_service_server_emailhandler",
+      "target": "email_service_server_emailhandler_log_message"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/admin.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_admin",
+      "target": "core_admin_availabilityslotadmin"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/admin.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_admin",
+      "target": "core_admin_bookingadmin"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/admin.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_admin",
+      "target": "core_admin_googlecredentialsadmin"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/admin.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_admin",
+      "target": "core_admin_userprofileadmin"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/admin.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_admin",
+      "target": "core_models"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "hms/core/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "core_admin_userprofileadmin",
+      "target": "core_models_availabilityslot"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "hms/core/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "core_admin_userprofileadmin",
+      "target": "core_models_booking"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "hms/core/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "core_admin_userprofileadmin",
+      "target": "core_models_googlecredentials"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "hms/core/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "core_admin_userprofileadmin",
+      "target": "core_models_userprofile"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "hms/core/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "core_admin_availabilityslotadmin",
+      "target": "core_models_availabilityslot"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "hms/core/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "core_admin_availabilityslotadmin",
+      "target": "core_models_booking"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "hms/core/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "core_admin_availabilityslotadmin",
+      "target": "core_models_googlecredentials"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "hms/core/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "core_admin_availabilityslotadmin",
+      "target": "core_models_userprofile"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "hms/core/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "core_admin_bookingadmin",
+      "target": "core_models_availabilityslot"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "hms/core/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "core_admin_bookingadmin",
+      "target": "core_models_booking"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "hms/core/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "core_admin_bookingadmin",
+      "target": "core_models_googlecredentials"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "hms/core/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "core_admin_bookingadmin",
+      "target": "core_models_userprofile"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "hms/core/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "core_admin_googlecredentialsadmin",
+      "target": "core_models_availabilityslot"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "hms/core/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "core_admin_googlecredentialsadmin",
+      "target": "core_models_booking"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "hms/core/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "core_admin_googlecredentialsadmin",
+      "target": "core_models_googlecredentials"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "hms/core/admin.py",
+      "source_location": "L2",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "core_admin_googlecredentialsadmin",
+      "target": "core_models_userprofile"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/apps.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_apps",
+      "target": "core_apps_coreconfig"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/apps.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_apps_coreconfig",
+      "target": "appconfig"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/migrations/0001_initial.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "migrations_0001_initial",
+      "target": "migrations_0001_initial_migration"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/models.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_models",
+      "target": "core_models_availabilityslot"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/models.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_models",
+      "target": "core_models_booking"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/models.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_models",
+      "target": "core_models_googlecredentials"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/models.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_models",
+      "target": "core_models_meta"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/models.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_models",
+      "target": "core_models_userprofile"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/tests.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_tests",
+      "target": "core_models"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/views.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_views",
+      "target": "core_models"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/models.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_models_userprofile",
+      "target": "core_models_userprofile_str"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "hms/core/tests.py",
+      "source_location": "L6",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "core_tests_bookingraceconditiontest",
+      "target": "core_models_userprofile"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/models.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_models_googlecredentials",
+      "target": "core_models_googlecredentials_str"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/models.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_models_googlecredentials",
+      "target": "core_models_googlecredentials_to_oauth_credentials"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/models.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_models_googlecredentials",
+      "target": "core_models_googlecredentials_update_from_oauth_credentials"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/models.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_models_rationale_27",
+      "target": "core_models_googlecredentials_to_oauth_credentials"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/models.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_models_rationale_42",
+      "target": "core_models_googlecredentials_update_from_oauth_credentials"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/models.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_models_availabilityslot",
+      "target": "core_models_availabilityslot_str"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "hms/core/tests.py",
+      "source_location": "L6",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "core_tests_bookingraceconditiontest",
+      "target": "core_models_availabilityslot"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/models.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_models_booking",
+      "target": "core_models_booking_str"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "hms/core/tests.py",
+      "source_location": "L6",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "core_tests_bookingraceconditiontest",
+      "target": "core_models_booking"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/tests.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_tests",
+      "target": "core_tests_bookingraceconditiontest"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/tests.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_tests_bookingraceconditiontest",
+      "target": "core_tests_bookingraceconditiontest_setup"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/tests.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_tests_bookingraceconditiontest",
+      "target": "core_tests_bookingraceconditiontest_test_simultaneous_booking_race_condition"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/tests.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_tests_bookingraceconditiontest",
+      "target": "transactiontestcase"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/views.py",
+      "source_location": "L238",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_views",
+      "target": "core_views_add_availability"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/views.py",
+      "source_location": "L334",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_views",
+      "target": "core_views_book_appointment"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/views.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_views",
+      "target": "core_views_create_google_calendar_event"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/views.py",
+      "source_location": "L201",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_views",
+      "target": "core_views_dashboard_redirect_view"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/views.py",
+      "source_location": "L216",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_views",
+      "target": "core_views_doctor_dashboard"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/views.py",
+      "source_location": "L391",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_views",
+      "target": "core_views_get_google_oauth_flow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/views.py",
+      "source_location": "L426",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_views",
+      "target": "core_views_google_auth_callback"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/views.py",
+      "source_location": "L410",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_views",
+      "target": "core_views_google_auth_redirect"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/views.py",
+      "source_location": "L171",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_views",
+      "target": "core_views_login_view"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/views.py",
+      "source_location": "L190",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_views",
+      "target": "core_views_logout_view"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/views.py",
+      "source_location": "L292",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_views",
+      "target": "core_views_patient_dashboard"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/views.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_views",
+      "target": "core_views_process_booking_background"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/views.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_views",
+      "target": "core_views_send_email_api_call"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/views.py",
+      "source_location": "L118",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_views",
+      "target": "core_views_signup_view"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/views.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_views",
+      "target": "core_views_trigger_email_notification"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/views.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_views_process_booking_background",
+      "target": "core_views_trigger_email_notification"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/views.py",
+      "source_location": "L159",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_views_signup_view",
+      "target": "core_views_trigger_email_notification"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/views.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_views_process_booking_background",
+      "target": "core_views_create_google_calendar_event"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/views.py",
+      "source_location": "L432",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_views_google_auth_callback",
+      "target": "core_views_get_google_oauth_flow"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/core/views.py",
+      "source_location": "L415",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_views_google_auth_redirect",
+      "target": "core_views_get_google_oauth_flow"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/hms/asgi.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "hms_asgi_rationale_1",
+      "target": "hms_asgi"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/hms/settings.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "hms_settings_rationale_1",
+      "target": "hms_settings"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/hms/urls.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "hms_urls_rationale_1",
+      "target": "hms_urls"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/hms/wsgi.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "hms_wsgi_rationale_1",
+      "target": "hms_wsgi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/manage.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "hms_manage",
+      "target": "hms_manage_main"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "hms/manage.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "hms_manage_rationale_8",
+      "target": "hms_manage_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scratch/smtp_server.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_smtp_server",
+      "target": "scratch_smtp_server_handle_client"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scratch/smtp_server.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_smtp_server",
+      "target": "scratch_smtp_server_run_smtp_server"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/rules/graphify.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rules_graphify",
+      "target": "rules_graphify_graphify"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/workflows/graphify.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "workflows_graphify",
+      "target": "workflows_graphify_workflow_graphify"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme",
+      "target": "readme_mini_hospital_management_system_hms"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L143",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_mini_hospital_management_system_hms",
+      "target": "readme_limitations"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_mini_hospital_management_system_hms",
+      "target": "readme_setup_and_run"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L84",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_mini_hospital_management_system_hms",
+      "target": "readme_system_architecture"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L119",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_mini_hospital_management_system_hms",
+      "target": "readme_the_design_decision"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_setup_and_run",
+      "target": "readme_1_workspace_configuration"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_setup_and_run",
+      "target": "readme_2_initialize_database"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_setup_and_run",
+      "target": "readme_3_start_local_mock_smtp_server_terminal_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_setup_and_run",
+      "target": "readme_4_start_serverless_email_service_terminal_2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L74",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_setup_and_run",
+      "target": "readme_5_run_django_application_terminal_3"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_setup_and_run",
+      "target": "readme_prerequisites"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L101",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_system_architecture",
+      "target": "readme_data_model_decisions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L97",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_system_architecture",
+      "target": "readme_django_app_serverless_connection"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L112",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_system_architecture",
+      "target": "readme_google_calendar_integration"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L107",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_system_architecture",
+      "target": "readme_role_based_access_enforcement"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L121",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_the_design_decision",
+      "target": "readme_named_problem_handling_concurrent_slot_booking_race_conditions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L124",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_the_design_decision",
+      "target": "readme_options_considered"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L136",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_the_design_decision",
+      "target": "readme_selected_choice_and_defense_option_b"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L126",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_options_considered",
+      "target": "readme_option_a_application_level_verification"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L131",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_options_considered",
+      "target": "readme_option_b_database_level_row_locking_via_transactions_select_for_update"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai-tool-usage-log/antigravity-session.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_tool_usage_log_antigravity_session",
+      "target": "ai_tool_usage_log_antigravity_session_ai_tool_usage_log"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai-tool-usage-log/antigravity-session.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_tool_usage_log_antigravity_session_ai_tool_usage_log",
+      "target": "ai_tool_usage_log_antigravity_session_session_information"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai-tool-usage-log/antigravity-session.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_tool_usage_log_antigravity_session_ai_tool_usage_log",
+      "target": "ai_tool_usage_log_antigravity_session_thread_summary"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai-tool-usage-log/antigravity-session.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_tool_usage_log_antigravity_session_thread_summary",
+      "target": "ai_tool_usage_log_antigravity_session_prompt_1_initial_requirement_analysis"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai-tool-usage-log/antigravity-session.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_tool_usage_log_antigravity_session_thread_summary",
+      "target": "ai_tool_usage_log_antigravity_session_prompt_2_execution_start"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai-tool-usage-log/antigravity-session.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_tool_usage_log_antigravity_session_thread_summary",
+      "target": "ai_tool_usage_log_antigravity_session_prompt_3_healthcare_redesign_ai_assistant_makeover"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai-tool-usage-log/video_script.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_tool_usage_log_video_script",
+      "target": "ai_tool_usage_log_video_script_video_demo_script_mini_hospital_management_system_hms"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai-tool-usage-log/video_script.md",
+      "source_location": "L114",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_tool_usage_log_video_script_video_demo_script_mini_hospital_management_system_hms",
+      "target": "ai_tool_usage_log_video_script_quick_tips_for_recording"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai-tool-usage-log/video_script.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_tool_usage_log_video_script_video_demo_script_mini_hospital_management_system_hms",
+      "target": "ai_tool_usage_log_video_script_script_action_guide"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai-tool-usage-log/video_script.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_tool_usage_log_video_script_video_demo_script_mini_hospital_management_system_hms",
+      "target": "ai_tool_usage_log_video_script_video_timeline_overview"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai-tool-usage-log/video_script.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_tool_usage_log_video_script_script_action_guide",
+      "target": "ai_tool_usage_log_video_script_section_1_project_overview_tech_stack_0_00_1_00"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai-tool-usage-log/video_script.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_tool_usage_log_video_script_script_action_guide",
+      "target": "ai_tool_usage_log_video_script_section_2_doctor_flow_1_00_2_30"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai-tool-usage-log/video_script.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_tool_usage_log_video_script_script_action_guide",
+      "target": "ai_tool_usage_log_video_script_section_3_patient_flow_2_30_4_30"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai-tool-usage-log/video_script.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_tool_usage_log_video_script_script_action_guide",
+      "target": "ai_tool_usage_log_video_script_section_4_slot_blocking_race_condition_verification_4_30_5_30"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai-tool-usage-log/video_script.md",
+      "source_location": "L76",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_tool_usage_log_video_script_script_action_guide",
+      "target": "ai_tool_usage_log_video_script_section_5_email_notifications_5_30_7_00"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai-tool-usage-log/video_script.md",
+      "source_location": "L90",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_tool_usage_log_video_script_script_action_guide",
+      "target": "ai_tool_usage_log_video_script_section_6_google_calendar_oauth_integration_7_00_8_30"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai-tool-usage-log/video_script.md",
+      "source_location": "L101",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_tool_usage_log_video_script_script_action_guide",
+      "target": "ai_tool_usage_log_video_script_section_7_code_walkthrough_design_decision_defense_8_30_10_00"
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "8a8db08772776ec9713b026165d8020bb591c614"
+}

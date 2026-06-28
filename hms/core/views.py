@@ -22,18 +22,23 @@ logger = logging.getLogger(__name__)
 
 def send_email_api_call(payload):
     try:
+        print(f"[EMAIL API] Sending POST to {settings.EMAIL_SERVICE_URL} with payload: {payload}")
         response = requests.post(settings.EMAIL_SERVICE_URL, json=payload, timeout=5)
+        print(f"[EMAIL API] Response: {response.status_code} - {response.text}")
         logger.info(f"Email service responded: {response.status_code} - {response.text}")
     except Exception as e:
+        print(f"[EMAIL API] ERROR: Failed to call email service: {e}")
         logger.error(f"Failed to call email service: {e}")
 
 def trigger_email_notification(trigger, email, **kwargs):
+    print(f"\n[NOTIFICATION] Triggering email '{trigger}' to: {email}")
     payload = {
         "trigger": trigger,
         "email": email,
         **kwargs
     }
     threading.Thread(target=send_email_api_call, args=(payload,), daemon=True).start()
+
 
 def create_google_calendar_event(user, title, start_time, end_time, description=""):
     try:
@@ -151,6 +156,7 @@ def signup_view(request):
             last_name=last_name
         )
         UserProfile.objects.create(user=user, role=role)
+        print(f"\n[SIGNUP] User successfully registered: {user.username} as {role} (Email: {user.email})")
         
         # Log the user in
         login(request, user)
@@ -199,13 +205,18 @@ def logout_view(request):
 
 @login_required
 def dashboard_redirect_view(request):
-    role = request.user.profile.role
-    if role == 'doctor':
-        return redirect('doctor_dashboard')
-    elif role == 'patient':
-        return redirect('patient_dashboard')
-    else:
-        return HttpResponseForbidden("Unauthorized role.")
+    try:
+        role = request.user.profile.role
+        if role == 'doctor':
+            return redirect('doctor_dashboard')
+        elif role == 'patient':
+            return redirect('patient_dashboard')
+    except UserProfile.DoesNotExist:
+        if request.user.is_superuser or request.user.is_staff:
+            return redirect('/admin/')
+        return HttpResponseForbidden("User profile not found. Please contact the administrator.")
+    
+    return HttpResponseForbidden("Unauthorized role.")
 
 
 # ==========================================
@@ -365,6 +376,7 @@ def book_appointment(request):
                 # Mark the slot as booked
                 slot.is_booked = True
                 slot.save()
+                print(f"\n[BOOKING] Slot booked: Patient '{request.user.username}' with Doctor '{slot.doctor.username}' for slot ID: {slot.id} ({slot.start_time})")
 
             # The transaction has successfully committed and locked row released.
             # Perform post-processing (Google Calendar integration & email triggers) in a background thread

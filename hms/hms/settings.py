@@ -147,3 +147,6 @@ GOOGLE_REDIRECT_URI = env('GOOGLE_REDIRECT_URI', default='http://localhost:8000/
 # Email service URL (serverless offline endpoint)
 EMAIL_SERVICE_URL = env('EMAIL_SERVICE_URL', default='http://localhost:3000/dev/email')
 
+# Trigger reload to parse new .env configuration
+
+

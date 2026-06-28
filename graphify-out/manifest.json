@@ -1,0 +1,162 @@
+{
+  "email-service/handler.py": {
+    "mtime": 1782321053.6483564,
+    "ast_hash": "e928b5fc750fa8da71a1f8e2012b5511",
+    "semantic_hash": ""
+  },
+  "email-service/package.json": {
+    "mtime": 1782321040.0186486,
+    "ast_hash": "18f9f6325851b9892a2806362a933d81",
+    "semantic_hash": ""
+  },
+  "email-service/server.py": {
+    "mtime": 1782321618.149431,
+    "ast_hash": "e2019a6505539c9e45aeed0112ede378",
+    "semantic_hash": ""
+  },
+  "hms/core/__init__.py": {
+    "mtime": 1782320906.070394,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "hms/core/admin.py": {
+    "mtime": 1782473553.4133213,
+    "ast_hash": "e1d98a3facf9cda0c71806b832f85d9a",
+    "semantic_hash": ""
+  },
+  "hms/core/apps.py": {
+    "mtime": 1782320906.049395,
+    "ast_hash": "0a9a65cd7341677c8aa206239aac679d",
+    "semantic_hash": ""
+  },
+  "hms/core/migrations/0001_initial.py": {
+    "mtime": 1782320939.362998,
+    "ast_hash": "734c811ea05616b5fa5cb4bd9fe4f163",
+    "semantic_hash": ""
+  },
+  "hms/core/migrations/__init__.py": {
+    "mtime": 1782320906.0723932,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "hms/core/models.py": {
+    "mtime": 1782321543.427055,
+    "ast_hash": "111ee42b4128fcd532726996af025ec8",
+    "semantic_hash": ""
+  },
+  "hms/core/tests.py": {
+    "mtime": 1782321099.6693685,
+    "ast_hash": "166a07210903ea23091d1ac54649ecf8",
+    "semantic_hash": ""
+  },
+  "hms/core/urls.py": {
+    "mtime": 1782324876.9404962,
+    "ast_hash": "eda60287ad6bee3900a345ef74a04c17",
+    "semantic_hash": ""
+  },
+  "hms/core/views.py": {
+    "mtime": 1782478049.272393,
+    "ast_hash": "77da34bd61a5146e7705003bc9e52d55",
+    "semantic_hash": ""
+  },
+  "hms/hms/__init__.py": {
+    "mtime": 1782320818.7357574,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "hms/hms/asgi.py": {
+    "mtime": 1782320818.693588,
+    "ast_hash": "b225efad45d8eba3981039252dc05c49",
+    "semantic_hash": ""
+  },
+  "hms/hms/settings.py": {
+    "mtime": 1782320930.180415,
+    "ast_hash": "f2446b8934380dd2b64e50db86321a91",
+    "semantic_hash": ""
+  },
+  "hms/hms/urls.py": {
+    "mtime": 1782320975.4325814,
+    "ast_hash": "6905dc9d48a083ceb3576e9c006c781b",
+    "semantic_hash": ""
+  },
+  "hms/hms/wsgi.py": {
+    "mtime": 1782320818.7357574,
+    "ast_hash": "800d7b49fface15accfa679ae4d5dd2e",
+    "semantic_hash": ""
+  },
+  "hms/manage.py": {
+    "mtime": 1782320818.678054,
+    "ast_hash": "956b3b0ce456df286e90b8b0377956a3",
+    "semantic_hash": ""
+  },
+  "scratch/smtp_server.py": {
+    "mtime": 1782323996.7103953,
+    "ast_hash": "661922e09250e3d4cbd66f245f64bc17",
+    "semantic_hash": ""
+  },
+  ".agents/rules/graphify.md": {
+    "mtime": 1782474064.2338095,
+    "ast_hash": "a0e4d192b9e2e17256124dbfc8e24e6a",
+    "semantic_hash": ""
+  },
+  ".agents/workflows/graphify.md": {
+    "mtime": 1782474064.234819,
+    "ast_hash": "637776aa6f7496d069afe7520c845c8a",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1782322030.3144028,
+    "ast_hash": "1cd073a4847d95e6e95a3e9f98081f53",
+    "semantic_hash": ""
+  },
+  "ai-tool-usage-log/antigravity-session.md": {
+    "mtime": 1782322423.9156914,
+    "ast_hash": "821e532416615ea1fe035ca7315583b7",
+    "semantic_hash": ""
+  },
+  "ai-tool-usage-log/video_script.md": {
+    "mtime": 1782324876.9385066,
+    "ast_hash": "b79a18bd32b870b01521fe4e386f62b2",
+    "semantic_hash": ""
+  },
+  "email-service/serverless.yml": {
+    "mtime": 1782321046.8552122,
+    "ast_hash": "6f89634a83fcf620ed90ca4675de5ea6",
+    "semantic_hash": ""
+  },
+  "hms/core/templates/core/base.html": {
+    "mtime": 1782322224.616662,
+    "ast_hash": "9debbffc78240aa8482b97c5c452773f",
+    "semantic_hash": ""
+  },
+  "hms/core/templates/core/doctor_dashboard.html": {
+    "mtime": 1782472927.7363284,
+    "ast_hash": "bc22951149215aae9e1eec5124b40804",
+    "semantic_hash": ""
+  },
+  "hms/core/templates/core/login.html": {
+    "mtime": 1782321005.8388207,
+    "ast_hash": "5991f8f738eef09f3723df09728dee6f",
+    "semantic_hash": ""
+  },
+  "hms/core/templates/core/patient_dashboard.html": {
+    "mtime": 1782472923.1105156,
+    "ast_hash": "9544cb121943ce8524fec26253e9e7c0",
+    "semantic_hash": ""
+  },
+  "hms/core/templates/core/signup.html": {
+    "mtime": 1782320997.9031546,
+    "ast_hash": "31ef40d2a7debf2d070d3d5373b75823",
+    "semantic_hash": ""
+  },
+  "requirements.txt": {
+    "mtime": 1782320736.5746837,
+    "ast_hash": "441967aa6855f9b9acb5f9ad0de39b6a",
+    "semantic_hash": ""
+  },
+  "ai-tool-usage-log/video_script.pdf": {
+    "mtime": 1782472842.9784653,
+    "ast_hash": "f4c2da73f93f698dc715643f1470a6b0",
+    "semantic_hash": ""
+  }
+}
